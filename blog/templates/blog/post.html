@@ -3,14 +3,5 @@
 {% block texto %} {{text}} {% endblock texto %} 
 
 {% block posts %}
-    <article class="post">
-        <header>
-            <h1 class="post__title"> ->
-                <a href="{% url 'blog:post' post.id %}">
-                {{post.title}}
-                </a>
-            </h1>
-        </header>
-        <div class="post__body">{{post.body}}</div>
-    </article>
+    {% include "global/partials/postunico.html" %}
 {% endblock posts %}

@@ -1,0 +1,12 @@
+-> WhiteNoise - Quebra galhos para estáticos em produção
+
+Apesar de precisar de outras configurações para que seja possível "simular um ambiente de produção". É possível instalar o WhiteNoise:
+
+* - pip install whitenoise
+* - DEBUG = False
+* - ALLOWED_HOSTS = [ ip que estava sendo feito acesso antes]
+* - adicionar no settings.py, nos MIDDLEWARE abaixo do SecurityMiddleware:
+        "whitenoise.middleware.WhiteNoiseMiddleware"
+* - em STATIC_ROOT é adicionado uma pasta que deve ser criada, como exemplo:
+        STATIC_ROOT = BASE_DIR / 'static_files'
+* - python manage.py runserver

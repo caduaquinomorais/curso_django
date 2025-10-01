@@ -8,7 +8,6 @@ def blog(request):
     print('Blog - Mostrando a home blog pra mim no cmd')
 
     context = {
-        #'text': 'usando o context para fazer o texto do blog',
         'posts': posts
     }
     return render(
@@ -37,12 +36,3 @@ def post(request, post_id):
         'blog/post.html',
         context
     )
-
-def exemplo(request):
-    print('Exemplo - Mostrando a home pra mim no cmd')
-
-    context = {
-        'text': 'usando o context para fazer o texto do exemplo',
-        'title': 'Página de exemplo'
-    }
-    return render(request, 'blog/exemplo.html',context,)

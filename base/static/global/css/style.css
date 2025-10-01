@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 a:hover {
@@ -39,6 +40,13 @@ body {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
 }
 
+.post_unico {
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 20%);
+}
+
+
 .menu {
   background: #000;
   padding: 1.5rem;
@@ -57,8 +65,8 @@ body {
 
 }
 
-@media (mim-width: 600px) {
-  .content {
+@media (min-width: 600px) {
+  .content:not(:has(.post_unico)) {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   }
 }
