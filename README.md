@@ -1,0 +1,1 @@
+Curso introdutório de Django do Luiz Otávio. Ele contém a estrutura básica de um projeto Django, incluindo estrutura de pastas e arquivos essenciais. As linguagens predominantes são Python, HTML e CSS.
