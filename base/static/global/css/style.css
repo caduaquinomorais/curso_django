@@ -18,23 +18,21 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.content{
+.content {
   display: grid;
-  gap: 3.5rem;
+  gap: 1.5rem;
   padding: 1.5rem;
 
 }
 
-.post{
+.post {
   background: #fff;
-  padding: 2.5rem;
-  gap: 2.5rem;
-  margin: 20px;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%) ;
+  padding: 1.5rem;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
 }
 
-@media (mim-width: 400px) {
+@media (mim-width: 600px) {
   .content {
-    grid-template-columns: repeat(auto-fill, minmax(32rem,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   }
 }

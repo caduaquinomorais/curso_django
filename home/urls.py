@@ -1,10 +1,8 @@
-from django.contrib import admin
 from django.urls import path
-from . import views as home_views
+from . import views
 
-
-#Seria uma espécie de controller
+app_name = 'home'
 
 urlpatterns = [
-    path('', home_views.home,name='home'),
+    path('', views.home,name='home'),
 ]
